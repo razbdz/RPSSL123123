@@ -76,7 +76,7 @@ public partial class MainWindow : Window
         if (h == a)
             return 0;
 
-        // Regler direkte som i din lærers tavle-notation
+
         return (h, a) switch
         {
             (Shape.Rock, Shape.Scissors) => 1,

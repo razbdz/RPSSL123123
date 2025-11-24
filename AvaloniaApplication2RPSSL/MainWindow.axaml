@@ -14,7 +14,7 @@
                    FontSize="18"
                    HorizontalAlignment="Center" />
 
-        <!-- Score -->
+      
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Center"
                     Spacing="6">
@@ -24,7 +24,7 @@
             <TextBlock Name="AgentScoreTextBlock" />
         </StackPanel>
 
-        <!-- Sidste træk -->
+    
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="5">
             <TextBlock Text="You played:"/>
             <TextBlock Name="LastHumanShapeTextBlock"/>
