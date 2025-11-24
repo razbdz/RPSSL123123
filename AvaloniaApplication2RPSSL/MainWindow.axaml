@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="AvaloniaApplication2RPSSL.MainWindow"
+        d:DesignWidth="350"
+        d:DesignHeight="260"
+        Title="Rock Paper Scissors Spock Lizard">
+
+    <StackPanel Margin="10" Spacing="10">
+
+        <TextBlock Text="Rock · Paper · Scissors · Spock · Lizard"
+                   FontSize="18"
+                   HorizontalAlignment="Center" />
+
+        <!-- Score -->
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Spacing="6">
+            <TextBlock Text="You:" />
+            <TextBlock Name="HumanScoreTextBlock" />
+            <TextBlock Text="Computer:" Margin="10,0,0,0"/>
+            <TextBlock Name="AgentScoreTextBlock" />
+        </StackPanel>
+
+        <!-- Sidste træk -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="5">
+            <TextBlock Text="You played:"/>
+            <TextBlock Name="LastHumanShapeTextBlock"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="5">
+            <TextBlock Text="Computer played:"/>
+            <TextBlock Name="LastAgentShapeTextBlock"/>
+        </StackPanel>
+
+        <TextBlock HorizontalAlignment="Center" Text="Choose:"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="5">
+            <Button Tag="Rock" Click="OnShapeClick">🪨</Button>
+            <Button Tag="Paper" Click="OnShapeClick">📄</Button>
+            <Button Tag="Scissors" Click="OnShapeClick">✂</Button>
+            <Button Tag="Lizard" Click="OnShapeClick">🦎</Button>
+            <Button Tag="Spock" Click="OnShapeClick">🖖</Button>
+        </StackPanel>
+
+        <TextBlock Name="RoundResultTextBlock"
+                   HorizontalAlignment="Center"
+                   Margin="0,5,0,0" />
+
+        <TextBlock Name="WinnerAnnounceTextBlock"
+                   FontSize="16"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"/>
+    </StackPanel>
+
+</Window>
+
